@@ -10,19 +10,12 @@
   "icon": "assets/carryon/icon.png",
   "environment": "server",
   "entrypoints": {
-    "fabric-datagen": [
-      "io.ula.carryon.client.MainDataGenerator"
-    ],
     "main": [
       "io.ula.carryon.Main"
     ]
   },
   "mixins": [
-    "carryon.mixins.json",
-    {
-      "config": "carryon.client.mixins.json",
-      "environment": "client"
-    }
+    "carryon.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
